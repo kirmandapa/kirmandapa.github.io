@@ -28,8 +28,29 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="img/1B.png" height="40" width="40"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Tentang</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Kepengurusan</a>
       <a href="index_Science Creation Event.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Science Creation Event</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Kontak</a>
     </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Tentang</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Kepengurusan</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Karya Kami</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">KIRMart</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Kontak</a>
+</nav>
+
 
 <!-- Header with full-height image -->
 <header>
@@ -164,7 +185,7 @@ body, html {
 </div>
 
 <!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64"<a href="Visi dan Misi KIR"></a> >
+<div class="w3-container w3-light-grey w3-padding-64"<a href="Visi dan Misi KIR"></a>
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>Visi dan Misi KIR</h3>
